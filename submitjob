@@ -1,0 +1,4 @@
+#!/bin/bash
+
+HADOOP_NATIVE_LIB=/tmp/hadoop-1.2.1/lib/native/Linux-amd64-64
+java -Djava.library.path=$HADOOP_NATIVE_LIB -Xms512m -Xmx512m -jar refineonspark-client-0.1.jar "$@"
